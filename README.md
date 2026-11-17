@@ -4,9 +4,11 @@ Reusable pieces of a process that loads county GIS data into the Indiana
 NG911 Data Harvest state template. They work against the state template and
 the NENA standard, so most of them apply to any Indiana county.
 
-The kit website (`docs/index.html`, published with GitHub Pages) explains
-every function in plain language, with an example. Start there if you are
-new to Python.
+The kit website explains every function in plain language, with an
+example. Start there if you are new to Python:
+
+- https://demo-app.cultivategeospatial.com/ng911-harvest-kit/
+- Mirror: https://blakecgs.github.io/ng911-data-harvest-kit/ (source: `docs/index.html`)
 
 ## Start here
 
@@ -77,7 +79,7 @@ Rows are marked NEW, CHANGED or REMOVED, and your choices are kept.
 - Test every function on a copy of your data first.
 - `apply_legacy_name` assumes the legacy (MSAG/ALI) street name is the GIS name.
 - `split_multipart_parcels` can raise your VEP total if the CAMA rule checks every parcel. Measure before you keep it.
-- Example values (county names, parcel IDs, counts) come from Monroe County, Indiana.
+- Example values in the functions are made up. The results on the website come from Monroe County, Indiana.
 
 ## License
 
